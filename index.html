@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <main>
+        <div class="pagina">
+            <header class="logo"><img src="./images/Vector.png" alt="logo-da-alura"></header>
+            <div class="encriptador">
+                <h1 class="titulo">Decodificador de Texto</h1>
+                <textarea id="texto" name="texto" placeholder="Digite aqui:" required pattern="[a-z]+"></textarea>
+                <div class="info-texto">
+                    <p class="info">🛈 Somente letras minúsculas e espaços</p>
+                    <div class="botoes">
+                        <button id="botao-encripta">Criptografar</button>
+                        <button id="botao-desencripta">Descriptrografar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="encriptado">
+                <div class="sem-mensagem">
+                    <div class="imagem">
+                        <img src="./images/High quality products 1 1.svg" alt="bonequinho-com-lupa">
+                    </div>
+                    <div class="mensagem-faltando">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+                <div id="saida">
+                    <h1 class="titulo">Saída</h1>
+                    <div class="texto-saida">
+                        <textarea class="cripto"></textarea>
+                    </div>
+                    <div class="copiado-aviso">
+                        <p class="copiado" style="display: hidden;">Copiado com sucesso!</p>
+                        <div class="botao-copiar">
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footer">
+        <p id="footer">Copyright &copy; 2022 - Roger Luiz Denardi</p>
+        <p><a id="footer-linkedin" href="https://www.linkedin.com/in/roger-denardi-2914b6235/" target="_blank"><img
+                    src="./images/linkedin.png" alt=""></a></p>
+        <p><a id="footer-git" href=" https://github.com/rgrdenardi" target="_blank"><img
+                    src="./images/github-logo-silhouette-in-a-square.png" alt=""></a></p>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</html>

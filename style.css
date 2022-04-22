@@ -1,0 +1,244 @@
+* {
+    font-family: 'Inter';
+}
+
+body {
+    background: #E5E5E5;
+    margin: 0;
+}
+
+.pagina {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+    gap: 66px;
+}
+
+.logo {
+    left: 84px;
+    top: 40px;
+}
+
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    color: #0A3871;
+}
+
+.encriptador {
+    width: 60%;
+    height: 900px;
+    margin-left: 4%;
+    background: rgb(200, 200, 224);
+    border-radius:  20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 15px #141220;
+}
+
+.encriptado {
+    width: 40%;
+    height: 900px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px #141220;
+}
+
+ #texto, .botoes {
+    width: 90%;
+    height: 500px;
+    margin: 46px 5% 148px 5%;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background: rgb(200, 200, 224);
+    border-style: none;
+}
+
+
+
+#texto::placeholder{
+    color: #0A3871;
+}
+
+#texto:focus, .cripto:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.sem-mensagem, .saida{
+    margin: 22px;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 0 5% 22px 5%;
+    height: 67px;
+    
+   
+    
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border-style: none;
+    color: azure;
+    font-size: 19px;
+    box-shadow: 2px 2px 15px #141220;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ #saida {
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .texto-saida {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5%;
+    margin-top: 0;
+    width: 90%;
+    height: 600px;
+    
+ }
+
+ .botao-copiar {
+    display: flex; 
+    justify-content: center;
+    margin: 22px;
+    margin-top: 0;
+ }
+
+.cripto {
+    width: 100%;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border-style: none;
+}
+
+.copiado, .info {
+    font-weight: 500;
+    text-align: center;
+}
+
+.copiado-aviso, .info-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.info-texto {
+    width: 90%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #141220;
+    align-items: center;
+    min-width: 100% !important;
+}
+
+#footer {
+    color: #E5E5E5;
+}
+
+@media screen and (max-width: 480px) {
+    .pagina {
+        display: flex;
+        flex-direction: column;
+        margin: 22px;
+    }
+
+    .encriptador {
+        width: 100%;
+        margin: 0;
+        height: 400px;
+    }
+
+    .encriptado {
+        height: 22%;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 0;
+        background-color: #E5E5E5;
+    }
+
+    .info-texto {
+        position: absolute;
+        top: 500px;
+        margin: 40px;
+        height: auto;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .info {
+        margin-bottom: 10px;
+    }
+
+    #texto {
+        height: 250px;
+        margin: 0;
+    }
+
+    .footer, footer {
+        min-width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .pagina {
+        gap: 30px;
+    }
+    
+    .encriptador {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .encriptado {
+        width: 40%;
+    }
+
+    .titulo {
+        margin-bottom: 0;
+    }
+
+    #texto {
+        margin-top: 64px;
+    }
+}
